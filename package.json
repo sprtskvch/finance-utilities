@@ -1,6 +1,6 @@
 {
   "name": "finance-utilities",
-  "version": "0.0.0-development",
+  "version": "0.0.1-development",
   "type": "module",
   "author": "sprtskvch",
   "license": "ISC",
@@ -15,7 +15,9 @@
     "./lib/**/*"
   ],
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   },
   "publishConfig": {
     "access": "public"
