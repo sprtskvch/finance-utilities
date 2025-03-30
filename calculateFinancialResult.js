@@ -1,11 +1,11 @@
 import { generateOnePaymentDates } from "./generateOnePaymentDates.js";
-import { generateDailyPaymentDates } from "./generateDailyPaymentDates.js";
+import { generateDaylyPaymentDates } from "./generateDailyPaymentDates.js";
 import { generateWeeklyPaymentDates } from "./generateWeeklyPaymentDates.js";
 import { generateMonthlyPaymentDates } from "./generateMonthlyPaymentDates.js";
 import { generateFinancialFlow } from "./generateFinancialFlow.js";
 import { agregateFinancialFlows } from "./agregateFinancialFlows.js";
 import { generateCompoundInterestFlow } from "./generateCompoundInterestFlow.js";
-import { generateCumulativeResultFlow } from "./genereateCumulativeResultFlow.js";
+import { generateCumilativeResultFlow } from "./genereateCumulativeResultFlow.js";
 
 export function calculateFinancialResult(
   financialFlowDescriptions,
@@ -20,7 +20,7 @@ export function calculateFinancialResult(
           paymentDates = generateOnePaymentDates(rest);
           break;
         case "daily":
-          paymentDates = generateDailyPaymentDates(rest);
+          paymentDates = generateDaylyPaymentDates(rest);
           break;
         case "weekly":
           paymentDates = generateWeeklyPaymentDates(rest);
@@ -42,7 +42,7 @@ export function calculateFinancialResult(
           paymentDates = generateOnePaymentDates(rest);
           break;
         case "daily":
-          paymentDates = generateDailyPaymentDates(rest);
+          paymentDates = generateDaylyPaymentDates(rest);
           break;
         case "weekly":
           paymentDates = generateWeeklyPaymentDates(rest);
@@ -62,5 +62,5 @@ export function calculateFinancialResult(
   );
 
   const agregatedFlow = agregateFinancialFlows([paymentFlow, ...interestFlows]);
-  return generateCumulativeResultFlow(agregatedFlow, dates);
+  return generateCumilativeResultFlow(agregatedFlow, dates);
 }

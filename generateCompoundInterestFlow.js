@@ -1,4 +1,4 @@
-import { generateCumulativeResultFlow } from "./genereateCumulativeResultFlow.js";
+import { generateCumilativeResultFlow } from "./genereateCumulativeResultFlow.js";
 
 export function generateCompoundInterestFlow({
   startDate,
@@ -7,7 +7,7 @@ export function generateCompoundInterestFlow({
   interest,
   paymentLabel,
 }) {
-  const cumilitiveFlow = generateCumulativeResultFlow(financialFlow);
+  const cumilitiveFlow = generateCumilativeResultFlow(financialFlow);
   let sum = 0;
   let j = 0;
   let interestPayment = 0;

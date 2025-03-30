@@ -5,7 +5,7 @@ function getNextDate(date, interval) {
   return nextDate;
 }
 
-export function generateDailyPaymentDates({
+export function generateDaylyPaymentDates({
   startDate,
   endDate,
   period: { interval },
