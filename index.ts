@@ -1,4 +1,4 @@
-export { agregateFinancialFlows } from "./agregateFinancialFlows.js";
+export { aggregateFinancialFlows } from "./aggregateFinancialFlows.js";
 export { calculateFinancialResult } from "./calculateFinancialResult.js";
 export { generateCompoundInterestFlow } from "./generateCompoundInterestFlow.js";
 export { generateDailyPaymentDates } from "./generateDailyPaymentDates.js";
@@ -6,7 +6,7 @@ export { generateFinancialFlow } from "./generateFinancialFlow.js";
 export { generateMonthlyPaymentDates } from "./generateMonthlyPaymentDates.js";
 export { generateOnePaymentDates } from "./generateOnePaymentDates.js";
 export { generateWeeklyPaymentDates } from "./generateWeeklyPaymentDates.js";
-export { generateCumulativeResultFlow } from "./genereateCumulativeResultFlow.js";
-export { printCumilitiveFlow } from "./printCumilitiveFlow.js";
+export { generateCumulativeResultFlow } from "./generateCumulativeResultFlow.js";
+export { printCumulativeFlow } from "./printCumulativeFlow.js";
 export { printFinancialFlow } from "./printFinancialFlow.js";
 export { printPaymentDates } from "./printPaymentDates.js";

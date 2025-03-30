@@ -1,4 +1,4 @@
-export function generateCumilativeResultFlow(financialFlow, dates) {
+export function generateCumulativeResultFlow(financialFlow, dates) {
   let sum = 0;
   let i = 0;
   return financialFlow.reduce((res, { date, payment }, index) => {

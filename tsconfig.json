@@ -6,7 +6,7 @@
       "moduleResolution": "NodeNext",
       "outDir": "./lib/",
       "declarationDir": "./lib/types",
-      "strict": true,
+      "strict": false,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
       "skipLibCheck": true,

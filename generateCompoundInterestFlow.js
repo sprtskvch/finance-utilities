@@ -1,4 +1,4 @@
-import { generateCumilativeResultFlow } from "./genereateCumulativeResultFlow.js";
+import { generateCumilativeResultFlow } from "./generateCumulativeResultFlow.js";
 
 export function generateCompoundInterestFlow({
   startDate,

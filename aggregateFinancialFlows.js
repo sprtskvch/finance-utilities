@@ -1,6 +1,6 @@
 import flatten from "lodash/flatten.js";
 
-export function agregateFinancialFlows(financialFlows) {
+export function aggregateFinancialFlows(financialFlows) {
   const resultingFinancialFlow = flatten(financialFlows)
     .sort(({ date: date1 }, { date: date2 }) =>
       date1.isSameOrBefore(date2, "day") ? -1 : 1
