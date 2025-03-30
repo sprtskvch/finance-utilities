@@ -31,7 +31,5 @@ export function agregateFinancialFlows(financialFlows) {
     sum += payment.payment;
   });
 
-  console.log('test release workflow')
-
   return resultingFinancialFlow;
 }
